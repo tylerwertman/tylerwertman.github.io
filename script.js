@@ -13,7 +13,7 @@ function navUlColor(element) {
         li.children[1].style.color = "white";
     }else {
         li.classList.remove("navLiColor");
-        li.children[0].src = `./icons/${name}.svg`
+        li.children[0].src = `./images/${name}.svg`
         li.children[1].style.color = "darkslategrey";
     }
 }
