@@ -15,11 +15,13 @@ nav, nav ul {
 }
 nav {
     background-color: whitesmoke;
+    background-color: lightgrey;
     color: darkslategrey;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     box-shadow: 0 0 10px black;
+    /* position: fixed; */
 }
 nav ul {
     /* gap: 50px; */
@@ -28,15 +30,18 @@ nav ul {
 nav li {
     padding: 20px;
 }
-nav a {
+nav a, footer {
     color: darkslategrey;
     text-decoration: none;
 }
 .navLiColor {
-    background-color:seagreen;
-    color: white;
+    /* background-color:#009050; */
+    background-color: seagreen;
+    color: whitesmoke;
+    color: lightgrey;
 }
 .navH1Color {
     background-color: whitesmoke;
+    background-color: lightgrey;
     color: seagreen;
 }
