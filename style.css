@@ -2,13 +2,41 @@
     margin: 0%;
     padding: 0;
     font-family: sans-serif;
-    border: 1px dotted red;
+    /* border: 1px dotted red; */
 }
 
-flex {
+nav, nav ul {
     display: flex;
 }
 
 .container {
-    
+    /* width: 800px; */
+    margin: 0 auto;
+}
+nav {
+    background-color: whitesmoke;
+    color: darkslategrey;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 0 10px black;
+}
+nav ul {
+    /* gap: 50px; */
+    list-style:none;
+}
+nav li {
+    padding: 20px;
+}
+nav a {
+    color: darkslategrey;
+    text-decoration: none;
+}
+.navLiColor {
+    background-color:seagreen;
+    color: white;
+}
+.navH1Color {
+    background-color: whitesmoke;
+    color: seagreen;
 }
