@@ -8,7 +8,7 @@ function navUlColor(element) {
     // console.log(li);
     if (!li.classList.contains("navLiColor")) {
         li.classList.add("navLiColor");
-        li.children[0].src = `./icons/${name}-fill.svg`
+        li.children[0].src = `./images/${name}-fill.svg`
         console.log(li.children[0].src);
         li.children[1].style.color = "white";
     }else {
