@@ -9,28 +9,41 @@
     <link rel="icon" type="image/x-icon" href="./images/cup-hot-fill.svg">
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <nav>
             <h1 onmouseover="navH1Color(this)" onmouseout="navH1Color(this)">Tyler Wertman</h1>
-            <div class="navLinks">
+            <div id="navLinks">
                 <ul>
                     <li onmouseover="navUlColor(this)" onmouseout="navUlColor(this)"><img src="./images/About.svg" alt="about">&nbsp;<a href="#">About</a></li>
                     <li onmouseover="navUlColor(this)" onmouseout="navUlColor(this)"><img src="./images/Projects.svg" alt="projects">&nbsp;<a href="#">Projects</a></li>
-                    <li onmouseover="navUlColor(this)" onmouseout="navUlColor(this)"><img src="./images/Education.svg" alt="education">&nbsp;<a href="#">Education</a></li>
-                    <li onmouseover="navUlColor(this)" onmouseout="navUlColor(this)"><img src="./images/Tech.svg" alt="tech">&nbsp;<a href="#">Tech</a></li>
-                    <li onmouseover="navUlColor(this)" onmouseout="navUlColor(this)"><img src="./images/Blog.svg" alt="blog">&nbsp;<a href="#">Blog</a></li>
+                    <!-- <li onmouseover="navUlColor(this)" onmouseout="navUlColor(this)"><img src="./images/Education.svg" alt="education">&nbsp;<a href="#">Education</a></li> -->
+                    <!-- <li onmouseover="navUlColor(this)" onmouseout="navUlColor(this)"><img src="./images/Tech.svg" alt="tech">&nbsp;<a href="#">Tech</a></li> -->
+                    <!-- <li onmouseover="navUlColor(this)" onmouseout="navUlColor(this)"><img src="./images/Blog.svg" alt="blog">&nbsp;<a href="#">Blog</a></li> -->
                     <li onmouseover="navUlColor(this)" onmouseout="navUlColor(this)"><img src="./images/Contact.svg" alt="contact">&nbsp;<a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <main>
-
+            <div id="main">
+                <div id="mainLeft">
+                    <img src="images/me.png" alt="picture of tyler">
+                </div>
+                <div id="mainRight">
+                    <h2>Tyler Wertman <br> <br>Developments</h2>
+                    <br>
+                    <div id="buttonLine">
+                        <button onmouseover="buttonColor(this)" onmouseout="buttonColor(this)"><img src="./images/Contact.svg" alt="contact">&nbsp;<a href="#">Contact</a></button>
+                        &nbsp;<button onmouseover="buttonColor(this)" onmouseout="buttonColor(this)"><img src="./images/Shop.svg" alt="shop">&nbsp;<a href="#">Shop</a></button>
+                    </div>
+                    <br><p>Hello World! I am Tyler, a full-stack web developer. I learned to code at the Coding Dojo and I self taught my other skills & services!</p>
+                </div>
+            </div>
         </main>
     </div>
-    <!-- <div class="navLiColor">test</div>
-    <div class="navH1Color">test</div> -->
+    <!-- <div id="navLiColor">test</div>
+    <div id="navH1Color">test</div> -->
     <footer>
-        © 2022 Tyler Wertman <img src="./icons/github.svg" alt="github"><a href="https://pages.github.com/">Powered by GitHub Pages</a>
+        © 2022 Tyler Wertman <a href="https://pages.github.com/"><img src="images/github.svg" alt="github">Powered by GitHub Pages</a>
     </footer>
     <script src="script.js"></script>
 </body>

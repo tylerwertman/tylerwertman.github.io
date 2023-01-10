@@ -9,11 +9,13 @@ nav, nav ul {
     display: flex;
 }
 
-.container {
-    /* width: 800px; */
+#container {
+    width: 1280px;
+    /* height: 1280px; */
     margin: 0 auto;
 }
 nav {
+    /* width: 1260px; */
     background-color: whitesmoke;
     background-color: lightgrey;
     color: darkslategrey;
@@ -34,14 +36,73 @@ nav a, footer {
     color: darkslategrey;
     text-decoration: none;
 }
-.navLiColor {
+#navLiColor {
     /* background-color:#009050; */
     background-color: seagreen;
     color: whitesmoke;
     color: lightgrey;
 }
-.navH1Color {
+#navH1Color {
     background-color: whitesmoke;
     background-color: lightgrey;
     color: seagreen;
+}
+main {
+    padding: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main {
+    display: flex;
+    align-items: center;
+}
+#mainLeft {
+    /* margin: 0 0 0 640px; */
+    /* align-items: right; */
+    /* justify-content: center; */
+    padding: 20px 20px 40px 20px;
+    background-color: seagreen;
+}
+#mainLeft img {
+    width: 200px;
+}
+#mainRight {
+    width: 200px;
+    padding-left: 20px;
+}
+#mainRight button {
+    padding: 10px;
+    border-radius: 50px;
+    border: 0;
+    background-color: whitesmoke;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: darkslategrey;
+}
+#mainRight button a {
+    text-decoration: none;
+    color: darkslategrey;
+}
+#buttonLine {
+    display: flex;
+}
+#mainRight p {
+    line-height: 1.2em;
+    text-align: justify;
+}
+
+
+
+
+footer {
+    background-color: lightgrey;
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+    width: 1260px;
+    position: fixed;
+    top: 609px;
+
 }

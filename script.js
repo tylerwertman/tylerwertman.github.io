@@ -27,3 +27,35 @@ function navH1Color(element) {
         h1.classList.remove("navH1Color");
     }
 }
+function buttonColor(element) {
+    var button = element;
+    var name = button.innerText;
+    console.log(button.innerText);
+    if (!button.classList.contains("navLiColor")) {
+        button.classList.add("navLiColor");
+        button.children[0].src = `./images/${name}-fill.svg`
+        button.style.color = "white";
+    }else {
+        button.classList.remove("navLiColor");
+        button.children[0].src = `./images/${name}.svg`
+        button.style.color = "darkslategrey";
+    }
+}
+
+function buttonColor(element) {
+    // console.log("navUlColor running");
+    var button = element;
+    var name = button.children[1].innerText;
+    // console.log(name);
+    // console.log(li);
+    if (!button.classList.contains("navLiColor")) {
+        button.classList.add("navLiColor");
+        button.children[0].src = `./images/${name}-fill.svg`
+        console.log(button.children[0].src);
+        button.children[1].style.color = "white";
+    }else {
+        button.classList.remove("navLiColor");
+        button.children[0].src = `./images/${name}.svg`
+        button.children[1].style.color = "darkslategrey";
+    }
+}
