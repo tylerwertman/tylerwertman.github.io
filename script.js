@@ -9,8 +9,8 @@ function navUlColor(element) {
     if (!li.classList.contains("navLiColor")) {
         li.classList.add("navLiColor");
         li.children[0].src = `./images/${name}-fill.svg`
-        console.log(li.children[0].src);
-        li.children[1].style.color = "white";
+        // console.log(li.children[0].src);
+        li.children[1].style.color = "#2e8b57";
     }else {
         li.classList.remove("navLiColor");
         li.children[0].src = `./images/${name}.svg`
@@ -30,11 +30,11 @@ function navH1Color(element) {
 function buttonColor(element) {
     var button = element;
     var name = button.innerText;
-    console.log(button.innerText);
+    // console.log(button.innerText);
     if (!button.classList.contains("navLiColor")) {
         button.classList.add("navLiColor");
         button.children[0].src = `./images/${name}-fill.svg`
-        button.style.color = "white";
+        button.style.color = "#2e8b57";
     }else {
         button.classList.remove("navLiColor");
         button.children[0].src = `./images/${name}.svg`
@@ -51,8 +51,8 @@ function buttonColor(element) {
     if (!button.classList.contains("navLiColor")) {
         button.classList.add("navLiColor");
         button.children[0].src = `./images/${name}-fill.svg`
-        console.log(button.children[0].src);
-        button.children[1].style.color = "white";
+        // console.log(button.children[0].src);
+        button.children[1].style.color = "#2e8b57";
     }else {
         button.classList.remove("navLiColor");
         button.children[0].src = `./images/${name}.svg`
