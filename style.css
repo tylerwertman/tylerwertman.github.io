@@ -19,6 +19,7 @@ nav {
     position: fixed;
     top: 0%;
     width: 100%;
+    /* padding: 0 20px 0 20px; */
 }
 nav, footer {
     /* width: 1260px; */
@@ -27,16 +28,17 @@ nav, footer {
     /* color: darkslategrey; */
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 20px 0 20px;
     box-shadow: 0 0 10px black;
     /* position: fixed; */
 }
-nav h1 {
+/* nav h1 {
     margin-left: 20px;
-}
+} */
 nav ul {
     /* gap: 50px; */
     list-style:none;
+    margin-right: 20px;
 }
 nav li {
     padding: 20px;
@@ -128,7 +130,7 @@ main {
     line-height: 1.2em;
     text-align: justify;
 }
-#about h2, #projects h2, #contact h2, #education h2 {
+#about h2, #projects h2, #contact h2, #education h2, #todo h2 {
     background-color: lightgrey;
     /* width: 1280px; */
     text-align: center;
@@ -144,6 +146,14 @@ main {
     padding: 20px;
     border-radius: 50px;
 }
+#about .content, #todo .content{
+    line-height: 1.3;
+    text-align: justify;
+}
+#education li {
+    list-style: square;
+    /* text-align: left; */
+}
 #contact {
     margin-bottom: 50px;
 }
@@ -151,5 +161,5 @@ main {
 footer {
     padding: 10px;
     position: fixed;
-    top: 95.6%;
+    bottom: 0%;
 }
