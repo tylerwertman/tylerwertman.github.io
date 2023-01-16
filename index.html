@@ -11,15 +11,15 @@
 <body>
     <div id="container">
         <nav>
-            <h1 onmouseenter="navH1Hover(this)" onmouseleave="navH1Hover(this)">Tyler Wertman Developments</h1>
+            <h1 onmouseenter="navH1Hover(this)" onmouseleave="navH1Hover(this)"><a href="#">Tyler Wertman Developments</a></h1>
             <div id="navLinks">
                 <ul>
-                    <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><img src="./images/About-DSG.svg" alt="about">&nbsp;<a href="#">About</a></li>
-                    <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><img src="./images/Projects-DSG.svg" alt="projects">&nbsp;<a href="#">Projects</a></li>
-                    <!-- <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><img src="./images/Education.svg" alt="education">&nbsp;<a href="#">Education</a></li> -->
+                    <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)">&nbsp;<a href="#about"><img src="./images/About-DSG.svg" alt="about"> About</a></li>
+                    <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><img src="./images/Projects-DSG.svg" alt="projects">&nbsp;<a href="#projects">Projects</a></li>
+                    <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><img src="./images/Education-DSG.svg" alt="education">&nbsp;<a href="#education">Education</a></li>
                     <!-- <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><img src="./images/Tech.svg" alt="tech">&nbsp;<a href="#">Tech</a></li> -->
                     <!-- <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><img src="./images/Blog.svg" alt="blog">&nbsp;<a href="#">Blog</a></li> -->
-                    <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><img src="./images/Contact-DSG.svg" alt="contact">&nbsp;<a href="#">Contact</a></li>
+                    <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><img src="./images/Contact-DSG.svg" alt="contact">&nbsp;<a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,8 +42,8 @@
                     <h2>Tyler Wertman<br>Developments</h2>
                     <br>
                     <div id="buttonLine">
-                        <button onmouseover="buttonHover(this)" onmouseout="buttonHover(this)"><img src="./images/Contact-DSG.svg" alt="Contact">&nbsp;<a href="#">Contact</a></button>
-                        &nbsp;<button onmouseover="buttonHover(this)" onmouseout="buttonHover(this)"><img src="./images/Etsy-DSG.svg" alt="Etsy">&nbsp;<a href="https://www.etsy.com/shop/TylersTechSpace">Shop</a></button>
+                        <button onmouseover="buttonHover(this)" onmouseout="buttonHover(this)"><img src="./images/Contact-DSG.svg" alt="Contact">&nbsp;<p onclick="window.open(#contact);">Contact</p></button>&nbsp;
+                        <button onmouseover="buttonHover(this)" onmouseout="buttonHover(this)"><img src="./images/Etsy-DSG.svg" alt="Etsy">&nbsp;<p onclick="window.open('https://www.etsy.com/shop/TylersTechSpace','_blank');">Shop</p></button>
                     </div>
                     <br><p>Hello World! I am Tyler, a full-stack web developer and enthusiast DIYer.</p>
                 </div>
@@ -56,6 +56,12 @@
             </div>
             <div class="section" id="projects">
                 <h2>Projects</h2>
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur error illum quasi aperiam laboriosam quia ipsam, amet a adipisci dicta?
+                </div>
+            </div>
+            <div class="section" id="education">
+                <h2>Education</h2>
                 <div class="content">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur error illum quasi aperiam laboriosam quia ipsam, amet a adipisci dicta?
                 </div>
@@ -87,3 +93,4 @@
 </body>
 </html>
 
+<!-- format navbar like about and then fix JS hover for h1 and links -->

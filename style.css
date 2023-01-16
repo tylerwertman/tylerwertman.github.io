@@ -15,6 +15,11 @@ nav, nav ul {
     /* height: 1280px; */
     margin: 0 auto;
 }
+nav {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
 nav, footer {
     /* width: 1260px; */
     background-color: whitesmoke;
@@ -44,7 +49,7 @@ nav a, footer {
     width: 100%;
 }
 main {
-    /* padding: 50px 0 0 0; */
+    padding: 50px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +128,7 @@ main {
     line-height: 1.2em;
     text-align: justify;
 }
-#about h2, #projects h2, #contact h2 {
+#about h2, #projects h2, #contact h2, #education h2 {
     background-color: lightgrey;
     /* width: 1280px; */
     text-align: center;
