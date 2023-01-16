@@ -19,12 +19,15 @@ nav, footer {
     /* width: 1260px; */
     background-color: whitesmoke;
     background-color: lightgrey;
-    color: darkslategrey;
+    /* color: darkslategrey; */
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     box-shadow: 0 0 10px black;
     /* position: fixed; */
+}
+nav h1 {
+    margin-left: 20px;
 }
 nav ul {
     /* gap: 50px; */
@@ -34,19 +37,7 @@ nav li {
     padding: 20px;
 }
 nav a, footer {
-    color: darkslategrey;
     text-decoration: none;
-}
-#navLiColor {
-    /* background-color:#009050; */
-    background-color: seagreen;
-    color: whitesmoke;
-    color: lightgrey;
-}
-#navH1Color {
-    background-color: whitesmoke;
-    background-color: lightgrey;
-    /* color: seagreen; */
 }
 .section {
     padding-top: 50px;
@@ -115,7 +106,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: end;
-    color: darkslategrey;
 }
 #introRight button a {
     text-decoration: none;
@@ -128,7 +118,7 @@ main {
     line-height: 1.2em;
     text-align: justify;
 }
-#about h2, #projects h2 {
+#about h2, #projects h2, #contact h2 {
     background-color: lightgrey;
     width: 1280px;
     text-align: center;
