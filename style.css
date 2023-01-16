@@ -3,18 +3,19 @@
     padding: 0;
     font-family: sans-serif;
     /* border: 1px dotted red; */
+    color: darkslategrey
 }
 
 nav, nav ul {
     display: flex;
 }
 
-#container {
+#container, footer {
     width: 1280px;
     /* height: 1280px; */
     margin: 0 auto;
 }
-nav {
+nav, footer {
     /* width: 1260px; */
     background-color: whitesmoke;
     background-color: lightgrey;
@@ -45,79 +46,108 @@ nav a, footer {
 #navH1Color {
     background-color: whitesmoke;
     background-color: lightgrey;
-    color: seagreen;
+    /* color: seagreen; */
+}
+.section {
+    padding-top: 50px;
 }
 main {
-    padding: 100px 0 0 0;
+    /* padding: 50px 0 0 0; */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-#main {
+#intro {
     display: flex;
     align-items: center;
+    background-color: lightgrey;
+    border-radius: 65px;
+    border-radius: 35px;
+    padding: 20px;
+    margin-top: 50px;
 }
-#mainLeft {
+#introLeft {
     /* margin: 0 0 0 640px; */
     /* align-items: right; */
     /* justify-content: center; */
     padding: 20px;
     background-color: seagreen;
+    border-radius: 50px;
+    border-radius: 25px;
 }
-#mainLeft>img {
-    width: 200px;
-    border-radius: 50%;
+#introLeft>img {
+    width: 300px;
+    border-radius: 35px;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
-#mainLeft {
+#introLeft {
     text-align: center;
     color: lightgrey;
     line-height: 15px;
 }
-/* #icons {
+#introLeft h4, #introLeft h2 {
+    color: lightgrey;
+}
+#icons{
     display: flex;
     justify-content: space-evenly;
-} */
-#mainLeft #icons img {
+    /* align-items: flex-start; */
+}
+#introLeft #icons img {
     margin: 10px 5px 0 5px;
     width: 25px;
 }
-#mainRight {
+#introRight {
     width: 200px;
     padding-left: 20px;
+    text-align: center;
+    line-height: 1.5;
 }
-#mainRight button {
+#introRight button {
     padding: 10px;
     border-radius: 50px;
     border: 0;
     background-color: whitesmoke;
-    background-color: lightgrey;
+    background-color: white;
+    /* background-color: lightgrey; */
     display: flex;
     justify-content: center;
     align-items: end;
     color: darkslategrey;
 }
-#mainRight button a {
+#introRight button a {
     text-decoration: none;
-    color: darkslategrey;
 }
 #buttonLine {
     display: flex;
+    justify-content: space-evenly;
 }
-#mainRight p {
+#introRight p {
     line-height: 1.2em;
     text-align: justify;
 }
-
-
+#about h2, #projects h2 {
+    background-color: lightgrey;
+    width: 1280px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 50px;
+}
+.content {
+    margin: 0 0 0 31%;
+    text-align: center;
+    width: 35%;
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 50px;
+}
 
 
 footer {
-    background-color: lightgrey;
-    box-shadow: 0 0 10px black;
     padding: 10px;
-    width: 1260px;
     position: fixed;
-    top: 609px;
-
+    top: 625px;
 }

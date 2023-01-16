@@ -1,6 +1,6 @@
 console.log("websiteLoaded");
 
-function navUlColor(element) {
+function navLiColor(element) {
     // console.log("navUlColor running");
     var li = element;
     var name = li.children[1].innerText;
@@ -8,12 +8,12 @@ function navUlColor(element) {
     // console.log(li);
     if (!li.classList.contains("navLiColor")) {
         li.classList.add("navLiColor");
-        li.children[0].src = `./images/${name}-fill.svg`
+        li.children[0].src = `./images/${name}-fill-SG.svg`
         // console.log(li.children[0].src);
-        li.children[1].style.color = "#2e8b57";
+        li.children[1].style.color = "seagreen";
     }else {
         li.classList.remove("navLiColor");
-        li.children[0].src = `./images/${name}.svg`
+        li.children[0].src = `./images/${name}-DSG.svg`
         li.children[1].style.color = "darkslategrey";
     }
 }
@@ -29,33 +29,31 @@ function navH1Color(element) {
 }
 function buttonColor(element) {
     var button = element;
-    var name = button.innerText;
-    // console.log(button.innerText);
+    var name = button.children[0].alt;
+    console.log(button.style.color);
+    console.log(button.children[0].alt);
     if (!button.classList.contains("navLiColor")) {
         button.classList.add("navLiColor");
-        button.children[0].src = `./images/${name}-fill.svg`
-        button.style.color = "#2e8b57";
+        button.children[0].src = `./images/${name}-fill-SG.svg`
+        button.children[1].style.color = "seagreen";
     }else {
         button.classList.remove("navLiColor");
-        button.children[0].src = `./images/${name}.svg`
-        button.style.color = "darkslategrey";
+        button.children[0].src = `./images/${name}-DSG.svg`
+        button.children[1].style.color = "darkslategrey";
     }
 }
 
-function buttonColor(element) {
-    // console.log("navUlColor running");
-    var button = element;
-    var name = button.children[1].innerText;
-    // console.log(name);
-    // console.log(li);
-    if (!button.classList.contains("navLiColor")) {
-        button.classList.add("navLiColor");
-        button.children[0].src = `./images/${name}-fill.svg`
-        // console.log(button.children[0].src);
-        button.children[1].style.color = "#2e8b57";
-    }else {
-        button.classList.remove("navLiColor");
-        button.children[0].src = `./images/${name}.svg`
-        button.children[1].style.color = "darkslategrey";
-    }
+
+function iconsColor(element){
+    var icon = element;
+    var name = icon.alt;
+    console.log(icon);
+    console.log(icon.src);
+    console.log(name);
+    // if(icon.src == `./images/${name}-fill-LG.svg`) {
+    //     icon.src = `./images/${name}-fill-DSG.svg`
+    // }
+    // else if(icon.src == `./images/${name}-fill-DSG.svg`){
+    //     icon.src = `./images/${name}-fill-LG.svg`
+    // }
 }
