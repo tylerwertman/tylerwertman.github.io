@@ -43,8 +43,10 @@
                     <h2>Tyler Wertman<br>Developments</h2>
                     <br>
                     <div id="buttonLine">
-                        <button onmouseover="buttonHover(this)" onmouseout="buttonHover(this)"><img src="./images/Contact-DSG.svg" alt="Contact">&nbsp;Contact</button>
-                        <button onmouseover="buttonHover(this)" onmouseout="buttonHover(this)" onclick="window.open('https://www.etsy.com/shop/TylersTechSpace','_blank');"><img src="./images/Etsy-DSG.svg" alt="Etsy">&nbsp;Shop</button>
+                        <a href="#contact"><img src="./images/Contact-DSG.svg" alt="Contact" onmouseover="buttonHover(this)" onmouseout="buttonHover(this)">&nbsp;Contact</a>
+                        <a href="https://www.etsy.com/shop/TylersTechSpace"><img src="./images/Etsy-DSG.svg" alt="Etsy">&nbsp;Shop</a>
+                        <!-- <button onmouseover="buttonHover(this)" onmouseout="buttonHover(this)"><img src="./images/Contact-DSG.svg" alt="Contact">&nbsp;Contact</button> -->
+                        <!-- <button onmouseover="buttonHover(this)" onmouseout="buttonHover(this)" onclick="window.open('https://www.etsy.com/shop/TylersTechSpace','_blank');"><img src="./images/Etsy-DSG.svg" alt="Etsy">&nbsp;Shop</button> -->
                     </div>
                     <br><p>Hello World! I am Tyler, a full-stack web developer and enthusiast DIYer.</p>
                 </div>
@@ -81,11 +83,10 @@
                         <li>□Learn MERN</li>
                         <li>□Integrate Media Queries and bootstrap for mobile</li>
                         <li>□Hookup contact form</li>
-                        <li>□make contact form pretty</li>
                         <!-- <li>□MQ out #intro flex for mobile, then center things in introTwo</li> -->
                         <!-- <li>□MQ remove PBG from footer</li> -->
-                        <li>□fix shop/contact hover (again)</li>
-                        <li>get contact button to work (button and a can't nest and validate)</li>
+                        <li>□fix shop/contact hover (again but hey at least #contact works now)</li>
+                        <li>□form button hover</li>
                     </ul>
                 </div>
             </div>
@@ -93,14 +94,14 @@
                 <h2>Contact</h2>
                 <div class="content" id="form">
                     <form action="#">
-                        <label for="fname">First name:</label>
-                        <input type="text" id="fname" name="fname" size="27" required><br>
-                        <label for="lname">Last name:</label>
-                        <input type="text" id="lname" name="lname" size="27"><br>
-                        <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:</label>
-                        <input type="text" id="email" name="email" size="27" required><br>
-                        <label for="message">Message:&nbsp;&nbsp;</label>
-                        <textarea name="message" rows="5" cols="20" required></textarea><br><br>
+                        <label for="fname">Name:</label>
+                        <input type="text" id="fname" name="fname" size="20" required>
+                        <!-- <label for="lname">Last name:</label> -->
+                        <!-- <input type="text" id="lname" name="lname" size="20"><br><br> -->
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" size="20" required><br><br>
+                        <label for="message">&nbsp;&nbsp;Message:</label><br><br>
+                        <textarea name="message" rows="5" cols="55" required></textarea><br><br>
                         <input type="submit" value="Submit">
                         <input type="reset">
                     </form> 

@@ -101,7 +101,7 @@ main {
     text-align: center;
     line-height: 1.5;
 }
-#introTwo button, input[type=submit], input[type=reset] {
+#introTwo button, #buttonLine a, input[type=submit], input[type=reset] {
     padding: 10px;
     border-radius: 50px;
     border: 0;
@@ -109,15 +109,16 @@ main {
     background-color: white;
     /* background-color: lightgrey; */
 }
-#introTwo button {
+#buttonLine {
     display: flex;
     justify-content: center;
-    align-items: end;
+    gap: 10px;
+    /* align-items: end; */
 }
-#introTwo button a {
+/* #introTwo button a {
     text-decoration: none;
-}
-#buttonLine {
+} */
+#buttonLine a{
     display: flex;
     justify-content: space-evenly;
 }
