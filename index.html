@@ -25,7 +25,7 @@
         </nav>
         <main>
             <div class="section" id="intro">
-                <div id="introLeft">
+                <div id="introOne">
                     <img src="images/me.png" alt="picture of tyler">
                     <h2>Tyler Wertman</h2><br>
                     <h4>Developer & Entrepreneur</h4>
@@ -39,12 +39,12 @@
                         <!-- <a href="#" target="_blank"><img onmouseover="socialHover(this)" onmouseout="socialHover(this)" src="./images/Medium-fill-LG.svg" alt="Medium"></a> -->
                     </div>
                 </div>
-                <div id="introRight">
+                <div id="introTwo">
                     <h2>Tyler Wertman<br>Developments</h2>
                     <br>
                     <div id="buttonLine">
-                        <button onmouseover="buttonHover(this)" onmouseout="buttonHover(this)"><img src="./images/Contact-DSG.svg" alt="Contact">&nbsp;<p>Contact</p></button>&nbsp;
-                        <button onmouseover="buttonHover(this)" onmouseout="buttonHover(this)"><img src="./images/Etsy-DSG.svg" alt="Etsy">&nbsp;<p onclick="window.open('https://www.etsy.com/shop/TylersTechSpace','_blank');">Shop</p></button>
+                        <button onmouseover="buttonHover(this)" onmouseout="buttonHover(this)"><img src="./images/Contact-DSG.svg" alt="Contact">&nbsp;Contact</button>&nbsp;
+                        <button onmouseover="buttonHover(this)" onmouseout="buttonHover(this)" onclick="window.open('https://www.etsy.com/shop/TylersTechSpace','_blank');"><img src="./images/Etsy-DSG.svg" alt="Etsy">&nbsp;Shop</button>
                     </div>
                     <br><p>Hello World! I am Tyler, a full-stack web developer and enthusiast DIYer.</p>
                 </div>
@@ -52,14 +52,14 @@
             <div class="section" id="about">
                 <h2>About</h2>
                 <div class="content">
-                    I was born and raised on Long Island, New York and currently reside in South Florida. I have a deep admiration for the intersection between form and function. Paired with my fascination in learning how things work, my passion for software development and 3D printing was spurred. In my downtime, I enjoy hiking mountains, pickup baseball games, dabbling with woodworking and electrical projects, and poetic writing with a goal of writing music.  
+                    <p>I was born and raised on Long Island, New York and currently reside in South Florida. I have a deep admiration for the intersection between form and function. Paired with my fascination in learning how things work, my passion for software development and 3D printing was spurred. In my downtime, I enjoy hiking mountains, pickup baseball games, dabbling with woodworking and electrical projects, and poetic writing with a goal of writing music.</p>
                 </div>
             </div>
             <div class="section" id="projects">
                 <h2>Projects</h2>
                 <div class="content">
                     <h4>Who's That Pokemon?</h4>
-                    <video controls="controls" width="300" name="WHO'S THAT POKEMON?">
+                    <video controls="controls" width="300">
                         <source src="./images/WTP.mov">
                     </video>
                 </div>
@@ -78,23 +78,29 @@
                 <h2>To Dos</h2>
                 <div class="content">
                     <ul>
-                        <li>Learn MERN</li>
-                        <li>Integrate Media Queries and bootstrap for mobile compatibility</li>
-                        <li>Hookup contact form</li>
+                        <li>□Learn MERN</li>
+                        <li>□Integrate Media Queries and bootstrap for mobile</li>
+                        <li>□Hookup contact form</li>
+                        <li>□stretch out contact form lines</li>
+                        <li>√ padding in about</li>
+                        <li>□MQ out #intro flex for mobile, then center things in introTwo</li>
+                        <li>□MQ remove PBG from footer</li>
+                        <li>□fix shop/contact hover (again)</li>
                     </ul>
                 </div>
             </div>
             <div class="section" id="contact">
                 <h2>Contact</h2>
-                <div class="content">
-                    <form action="">
+                <div class="content" id="form">
+                    <form action="#">
                         <label for="fname">First name:</label>
-                        <input type="text" id="fname" name="fname"><br>
+                        <input type="text" id="fname" name="fname" size="27" required><br>
                         <label for="lname">Last name:</label>
-                        <input type="text" id="lname" name="lname"><br>
+                        <input type="text" id="lname" name="lname" size="27"><br>
                         <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:</label>
-                        <input type="text" id="email" name="email"><br>
-                        <textarea name="message" rows="10" cols="26"></textarea><br><br>
+                        <input type="text" id="email" name="email" size="27" required><br>
+                        <label for="message">Message:&nbsp;&nbsp;</label>
+                        <textarea name="message" rows="5" cols="20" required></textarea><br><br>
                         <input type="submit" value="Submit">
                         <input type="reset">
                     </form> 

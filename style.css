@@ -5,11 +5,9 @@
     /* border: 1px dotted red; */
     color: darkslategrey
 }
-
 nav, nav ul {
     display: flex;
 }
-
 #container, footer {
     width: 100%;
     /* height: 1280px; */
@@ -32,9 +30,6 @@ nav, footer {
     box-shadow: 0 0 10px black;
     /* position: fixed; */
 }
-/* nav h1 {
-    margin-left: 20px;
-} */
 nav ul {
     /* gap: 50px; */
     list-style:none;
@@ -57,7 +52,7 @@ main {
     align-items: center;
     flex-direction: column;
 }
-#intro {
+#intro { /* media query for mobile- remove flex and shrink width  */
     display: flex;
     align-items: center;
     background-color: lightgrey;
@@ -68,7 +63,7 @@ main {
     width: 48.5%;
     width: 560px;
 }
-#introLeft {
+#introOne {
     /* margin: 0 0 0 640px; */
     /* align-items: right; */
     /* justify-content: center; */
@@ -77,18 +72,18 @@ main {
     border-radius: 50px;
     border-radius: 25px;
 }
-#introLeft>img {
+#introOne>img {
     width: 300px;
     border-radius: 35px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
-#introLeft {
+#introOne {
     text-align: center;
     color: lightgrey;
     line-height: 15px;
 }
-#introLeft h4, #introLeft h2 {
+#introOne h4, #introOne h2 {
     color: lightgrey;
 }
 #icons{
@@ -96,17 +91,17 @@ main {
     justify-content: space-evenly;
     /* align-items: flex-start; */
 }
-#introLeft #icons img {
+#introOne #icons img {
     margin: 10px 5px 0 5px;
     width: 25px;
 }
-#introRight {
+#introTwo {
     width: 200px;
     padding-left: 20px;
     text-align: center;
     line-height: 1.5;
 }
-#introRight button, input[type=submit], input[type=reset] {
+#introTwo button, input[type=submit], input[type=reset] {
     padding: 10px;
     border-radius: 50px;
     border: 0;
@@ -114,19 +109,19 @@ main {
     background-color: white;
     /* background-color: lightgrey; */
 }
-#introRight button {
+#introTwo button {
     display: flex;
     justify-content: center;
     align-items: end;
 }
-#introRight button a {
+#introTwo button a {
     text-decoration: none;
 }
 #buttonLine {
     display: flex;
     justify-content: space-evenly;
 }
-#introRight p {
+#introTwo p {
     line-height: 1.2em;
     text-align: justify;
 }
@@ -137,18 +132,24 @@ main {
     padding: 10px 0 10px 0;
     box-shadow: 0 0 10px black;
     margin-bottom: 50px;
+    width: 100%;
 }
 .content {
-    margin: 0 0 0 28%;
+    margin: 0 auto;
     text-align: center;
-    width: 40%;
+    width: 50%;
     background-color: lightgrey;
     padding: 20px;
     border-radius: 50px;
 }
 #about .content, #todo .content{
     line-height: 1.3;
-    text-align: justify;
+}
+#about .content {
+    text-align: justify;    
+}
+#about p {
+    padding: 10px;
 }
 #education li {
     list-style: square;
@@ -162,4 +163,5 @@ footer {
     padding: 10px;
     position: fixed;
     bottom: 0%;
+    text-align: center;
 }
