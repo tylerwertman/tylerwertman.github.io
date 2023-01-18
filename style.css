@@ -166,3 +166,17 @@ footer {
     bottom: 0%;
     text-align: center;
 }
+
+
+/* JS classes */
+.shadow {
+    position: relative;
+    bottom: 5px;
+    box-shadow: 5px 5px 5px grey;
+    cursor: pointer;
+}
+
+.navLiHover {
+    background-color: seagreen;
+    color: lightgrey;
+}
