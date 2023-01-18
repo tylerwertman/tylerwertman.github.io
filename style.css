@@ -91,9 +91,9 @@ main {
     justify-content: space-evenly;
     /* align-items: flex-start; */
 }
-#introOne #icons img {
+#icons img {
     margin: 10px 5px 0 5px;
-    width: 25px;
+    width: 30px;
 }
 #introTwo {
     width: 200px;

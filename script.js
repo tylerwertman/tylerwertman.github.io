@@ -56,9 +56,9 @@ function socialHover(element){
     // console.log(name);
     if (!icon.classList.contains("socialHover")) {
         icon.classList.add("socialHover");
-        icon.src = `./images/${name}-fill-DSG.svg`
+        icon.src = `./images/${name}-fill-SG.svg`
     }else {
         icon.classList.remove("socialHover");
-        icon.src = `./images/${name}-fill-LG.svg`
+        icon.src = `./images/${name}-fill-DSG.svg`
     }
 }
