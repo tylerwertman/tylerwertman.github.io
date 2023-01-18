@@ -19,33 +19,39 @@ function navLiHover(element) {
     var name = li.children[0].children[0];
     console.log(li);
     console.log(name);
-    if (!name.classList.contains("navLiHover")) {
-        name.classList.add("navLiHover");
-        name.src = `./images/${name.alt}-fill-SG.svg`
+    if (!li.classList.contains("navLiHover")) {
+        li.classList.add("navLiHover");
+        // name.classList.add("shadow");
+        li.classList.add("shadow");
+        name.src = `./images/${name.alt}-LG.svg`
         // console.log(li.children[0].src);
-        li.children[0].style.color = "seagreen";
+        li.children[0].style.color = "lightgrey";
     }else {
-        name.classList.remove("navLiHover");
+        li.classList.remove("navLiHover");
+        // name.classList.remove("shadow");
+        li.classList.remove("shadow");
         name.src = `./images/${name.alt}-DSG.svg`
         li.children[0].style.color = "darkslategrey";
     }
 }
-function buttonHover(element) {
-    console.log("buttonHover running");
-    var button = element;
-    var name = button.children[0].alt;
-    // console.log(button.style.color);
-    // console.log(button.children[0].alt);
-    if (!button.classList.contains("buttonHover")) {
-        button.classList.add("buttonHover");
-        button.children[0].src = `./images/${name}-fill-SG.svg`
-        button.children[1].style.color = "seagreen";
-    }else {
-        button.classList.remove("buttonHover");
-        button.children[0].src = `./images/${name}-DSG.svg`
-        button.children[1].style.color = "darkslategrey";
-    }
-}
+// function buttonHover(element) {
+//     console.log("buttonHover running");
+//     var button = element;
+//     var name = button.children[0].alt;
+//     // console.log(button.style.color);
+//     // console.log(button.children[0].alt);
+//     if (!button.classList.contains("buttonHover")) {
+//         button.classList.add("buttonHover");
+//         icon.classList.add("socialHover");
+//         button.children[0].src = `./images/${name}-fill-SG.svg`
+//         button.children[1].style.color = "seagreen";
+//     }else {
+//         button.classList.remove("buttonHover");
+//         icon.classList.remove("socialHover");
+//         button.children[0].src = `./images/${name}-DSG.svg`
+//         button.children[1].style.color = "darkslategrey";
+//     }
+// }
 
 function socialHover(element){
     console.log("socialHover running");
@@ -54,11 +60,14 @@ function socialHover(element){
     // console.log(icon);
     // console.log(icon.src);
     // console.log(name);
+    console.log(icon.style.top);
     if (!icon.classList.contains("socialHover")) {
         icon.classList.add("socialHover");
-        icon.src = `./images/${name}-fill-DSG.svg`
+        icon.classList.add("shadow");
+        icon.src = `./images/${name}-fill-SG.svg`;
     }else {
         icon.classList.remove("socialHover");
-        icon.src = `./images/${name}-fill-LG.svg`
+        icon.classList.remove("shadow");
+        icon.src = `./images/${name}-fill-DSG.svg`
     }
 }
