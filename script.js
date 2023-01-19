@@ -22,14 +22,14 @@ function navLiHover(element) {
     if (!li.classList.contains("navLiHover")) {
         li.classList.add("navLiHover");
         // name.classList.add("shadow");
-        li.classList.add("shadow");
+        // li.classList.add("shadow");
         name.src = `./images/${name.alt}-LG.svg`
         // console.log(li.children[0].src);
         li.children[0].style.color = "lightgrey";
     }else {
         li.classList.remove("navLiHover");
         // name.classList.remove("shadow");
-        li.classList.remove("shadow");
+        // li.classList.remove("shadow");
         name.src = `./images/${name.alt}-DSG.svg`
         li.children[0].style.color = "darkslategrey";
     }
