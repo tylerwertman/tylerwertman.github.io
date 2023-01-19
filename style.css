@@ -5,6 +5,9 @@
     /* border: 1px dotted red; */
     color: darkslategrey
 }
+body {
+    background-color: whitesmoke;
+}
 nav, nav ul {
     display: flex;
 }
@@ -19,8 +22,7 @@ nav {
     width: 100%;
     /* padding: 0 20px 0 20px; */
 }
-nav, footer {
-    /* width: 1260px; */
+nav, footer {                                       /* MQ under 600px */
     background-color: whitesmoke;
     background-color: lightgrey;
     /* color: darkslategrey; */
@@ -52,7 +54,26 @@ main {
     align-items: center;
     flex-direction: column;
 }
-#intro { /* media query for mobile- remove flex and shrink width  */
+@media (width < 641px) {
+    #intro, #introOne, #introTwo {
+        display: none;
+    }
+    .content {
+        width: 340px;
+    }
+}
+@media (width > 640px) {
+    #introSM, #introOneSM, #introTwoSM {
+        display: none;
+    }
+    .content {
+        width: 560px;
+    }
+}
+
+/* big screen>640px intro */
+
+#intro {                                        
     display: flex;
     align-items: center;
     background-color: lightgrey;
@@ -60,7 +81,7 @@ main {
     border-radius: 35px;
     padding: 20px;
     margin-top: 50px;
-    width: 48.5%;
+    /* width: 48.5%; */
     width: 560px;
 }
 #introOne {
@@ -71,17 +92,15 @@ main {
     background-color: seagreen;
     border-radius: 50px;
     border-radius: 25px;
+    text-align: center;
+    color: lightgrey;
+    line-height: 15px;
 }
 #introOne>img {
     width: 300px;
     border-radius: 35px;
     border-radius: 10px;
     margin-bottom: 20px;
-}
-#introOne {
-    text-align: center;
-    color: lightgrey;
-    line-height: 15px;
 }
 #introOne h4, #introOne h2 {
     color: lightgrey;
@@ -127,6 +146,87 @@ main {
     line-height: 1.2em;
     text-align: justify;
 }
+
+/* small screen<640px intro */
+
+#introSM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgrey;
+    border-radius: 65px;
+    border-radius: 35px;
+    padding: 20px;
+    margin-top: 50px;
+    /* width: 48.5%; */
+    width: 340px;
+}
+#introOneSM {
+    /* margin: 0 0 0 640px; */
+    /* align-items: right; */
+    /* justify-content: center; */
+    padding: 20px;
+    background-color: seagreen;
+    border-radius: 50px;
+    border-radius: 25px;
+    text-align: center;
+    color: lightgrey;
+    line-height: 15px;
+}
+#introOneSM>img {
+    width: 300px;
+    border-radius: 35px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#introOneSM h4, #introOneSM h2 {
+    color: lightgrey;
+}
+#iconsSM{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: flex-start; */
+}
+#iconsSM img {
+    margin: 10px 5px 0 5px;
+    width: 30px;
+}
+#introTwoSM {
+    width: 340px;
+/* padding-left: 20px; */
+    text-align: center;
+    line-height: 1.5;
+}
+#introTwoSM button, #buttonLineSM a, input[type=submit], input[type=reset] {
+    padding: 10px;
+    border-radius: 50px;
+    border: 0;
+    background-color: whitesmoke;
+    background-color: white;
+    /* background-color: lightgrey; */
+    cursor: pointer;
+}
+#buttonLineSM {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* align-items: end; */
+}
+/* #introTwo button a {
+    text-decoration: none;
+} */
+#buttonLineSM a{
+    display: flex;
+    justify-content: space-evenly;
+}
+#introTwoSM p {
+    line-height: 1.2em;
+    text-align: justify;
+}
+
+/* End Small */
+
+
 #about h2, #projects h2, #contact h2, #education h2, #todo h2 {
     background-color: lightgrey;
     /* width: 1280px; */
@@ -139,7 +239,7 @@ main {
 .content {
     margin: 0 auto;
     text-align: center;
-    width: 560px;
+    /* width: 560px; */
     background-color: lightgrey;
     padding: 20px;
     border-radius: 50px;
