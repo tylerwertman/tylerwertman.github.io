@@ -3,7 +3,7 @@ console.log("websiteLoaded");
 function navH1Hover(element) {
     console.log("navH1Hover running");
     var h1 = element;
-    console.log(h1.children[0].innerText);
+    // console.log(h1.children[0].innerText);
     if(!h1.children[0].classList.contains("navH1Hover")) {
         h1.children[0].classList.add("navH1Hover");
         h1.children[0].style.color = "seagreen";
@@ -17,8 +17,8 @@ function navLiHover(element) {
     console.log("navLiHover running");
     var li = element;
     var name = li.children[0].children[0];
-    console.log(li);
-    console.log(name);
+    // console.log(li);
+    // console.log(name);
     if (!li.classList.contains("navLiHover")) {
         li.classList.add("navLiHover");
         // name.classList.add("shadow");
@@ -60,7 +60,7 @@ function socialHover(element){
     // console.log(icon);
     // console.log(icon.src);
     // console.log(name);
-    console.log(icon.style.top);
+    // console.log(icon.style.top);
     if (!icon.classList.contains("socialHover")) {
         icon.classList.add("socialHover");
         icon.classList.add("shadow");
