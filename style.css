@@ -108,6 +108,7 @@ main {
     background-color: whitesmoke;
     background-color: white;
     /* background-color: lightgrey; */
+    cursor: pointer;
 }
 #buttonLine {
     display: flex;
@@ -138,7 +139,7 @@ main {
 .content {
     margin: 0 auto;
     text-align: center;
-    width: 50%;
+    width: 560px;
     background-color: lightgrey;
     padding: 20px;
     border-radius: 50px;
@@ -165,6 +166,12 @@ footer {
     position: fixed;
     bottom: 0%;
     text-align: center;
+}
+footer img {
+    cursor: pointer;
+}
+#space {
+    text-decoration: none;
 }
 
 
