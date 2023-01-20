@@ -7,21 +7,27 @@
     <title>TWD</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./images/Kofi-fill-SG.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="container">
         <nav>
             <h1 onmouseenter="navH1Hover(this)" onmouseleave="navH1Hover(this)"><a href="#">Tyler Wertman Developments</a></h1>
             <div id="navLinks">
-                <ul>
-                    <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><a href="#about"><img src="./images/About-DSG.svg" alt="About">&nbsp;About</a></li>
-                    <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><a href="#projects"><img src="./images/Projects-DSG.svg" alt="Projects">&nbsp;Projects</a></li>
-                    <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><a href="#education"><img src="./images/Education-DSG.svg" alt="Education">&nbsp;Education</a></li>
-                    <!-- <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><a href="#tech"><img src="./images/Tech-DSG.svg" alt="Tech">&nbsp;Tech</a></li> -->
-                    <!-- <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><a href="#blog"><img src="./images/Blog-DSG.svg" alt="Blog">&nbsp;Blog</a></li> -->
-                    <li onmouseover="navLiHover(this)" onmouseout="navLiHover(this)"><a href="#contact"><img src="./images/Contact-DSG.svg" alt="Contact">&nbsp;Contact</a></li>
-                </ul>
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#home"><img src="./images/Home-DSG.svg" alt="Home">&nbsp;Home</a>&nbsp;
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#about"><img src="./images/About-DSG.svg" alt="About">&nbsp;About</a>&nbsp;
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#projects"><img src="./images/Projects-DSG.svg" alt="Projects">&nbsp;Projects</a>&nbsp;
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#education"><img src="./images/Education-DSG.svg" alt="Education">&nbsp;Education</a>&nbsp;
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#contact"><img src="./images/Contact-DSG.svg" alt="Contact">&nbsp;Contact</a>&nbsp;
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             </div>
+            <!-- <div id="navLinksSM">
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#home"><img src="./images/Home-DSG.svg" alt="Home">&nbsp;Home</a>&nbsp;
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#about"><img src="./images/About-DSG.svg" alt="About">&nbsp;About</a>&nbsp;
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#projects"><img src="./images/Projects-DSG.svg" alt="Projects">&nbsp;Projects</a>&nbsp;
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#education"><img src="./images/Education-DSG.svg" alt="Education">&nbsp;Education</a>&nbsp;
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#contact"><img src="./images/Contact-DSG.svg" alt="Contact">&nbsp;Contact</a>&nbsp;
+            </div> -->
         </nav>
         <main>
             <div class="section" id="introZero">
@@ -76,6 +82,7 @@
                         <li>□Integrate Media Queries and bootstrap for mobile</li>
                         <li>□Hookup contact form</li>
                         <li>□form button hover</li>
+                        <li>□convert svg icon set to use fontawesome</li>
                         <!-- <li>□MQ out #intro flex for mobile, then center things in introTwo</li> -->
                         <!-- <li>□MQ remove PBG from footer</li> -->
                     </ul>

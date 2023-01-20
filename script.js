@@ -15,23 +15,23 @@ function navH1Hover(element) {
 
 function navLiHover(element) {
     console.log("navLiHover running");
-    var li = element;
-    var name = li.children[0].children[0];
+    var a = element;
+    var name = a.children[0];
     // console.log(li);
     // console.log(name);
-    if (!li.classList.contains("navLiHover")) {
-        li.classList.add("navLiHover");
+    if (!a.classList.contains("navLiHover")) {
+        a.classList.add("navLiHover");
         // name.classList.add("shadow");
-        // li.classList.add("shadow");
+        // a.classList.add("shadow");
         name.src = `./images/${name.alt}-LG.svg`
         // console.log(li.children[0].src);
-        li.children[0].style.color = "lightgrey";
+        name.style.color = "lightgrey";
     }else {
-        li.classList.remove("navLiHover");
+        a.classList.remove("navLiHover");
         // name.classList.remove("shadow");
-        // li.classList.remove("shadow");
+        // a.classList.remove("shadow");
         name.src = `./images/${name.alt}-DSG.svg`
-        li.children[0].style.color = "darkslategrey";
+        name.style.color = "darkslategrey";
     }
 }
 // function buttonHover(element) {
