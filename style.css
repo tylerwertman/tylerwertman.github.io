@@ -8,7 +8,7 @@
 body {
     background-color: whitesmoke;
 }
-nav, nav ul {
+nav {
     display: flex;
 }
 #container, footer {
@@ -34,26 +34,34 @@ nav, footer {                                       /* MQ under 600px */
     /* position: fixed; */
 }
 nav h1 {
-    padding: 10px;
+    padding: 18px 10px;
+    font-size: 20px;
 }
 #navLinks {
     /* gap: 50px; */
     /* list-style:none; */
-    flex-direction: column;
     margin-right: 20px;
     padding: 10px;
-}
-#navLinksSM {
-    /* gap: 50px; */
-    /* list-style:none; */
-    display: none;
-    flex-direction: column;
-    margin-right: 20px;
-    padding: 10px;
+    display: flex;
+    align-items: flex-start;
 }
 #navLinks a {
     padding: 10px;
     border-radius: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items:flex-end;
+}
+#navLinks a:last-child {
+    display: none;
+}
+#navLinksSM {
+    gap: 20px;
+    /* list-style:none; */
+    display: none;
+    /* flex-direction: column; */
+    margin-right: 20px;
+    padding: 10px;
 }
 nav a, footer {
     text-decoration: none;
@@ -120,19 +128,6 @@ main {
     line-height: 1.5;
 }
 
-#buttonLine {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    /* align-items: end; */
-}
-/* #introTwo button a {
-    text-decoration: none;
-} */
-#buttonLine a{
-    display: flex;
-    justify-content: space-evenly;
-}
 #introTwo p {
     line-height: 1.2em;
     text-align: justify;
@@ -223,11 +218,14 @@ footer img {
         width: 340px;
     }
 }
-/* @media (width < 910px) {
-    #navLinks {
+@media (width < 910px) {
+    #navLinks a:not(:last-child){
         display: none;
     }
     #navLinksSM {
         display: flex;
     }
-} */
+    /* #navLinks a:last-child {
+        display: block;
+    } */
+}
