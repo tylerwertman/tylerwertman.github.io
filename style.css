@@ -33,36 +33,40 @@ nav, footer {                                       /* MQ under 600px */
     /* position: fixed; */
 }
 nav h1 {
-    padding: 18px 10px;
-    font-size: 20px;
+    padding: 10px 0;
+    font-size: 15px;
+    margin-right: 10px;
 }
-#navLinks {
+#navLinksL {
     margin-right: 20px;
     padding: 10px;
     display: none;
 }
-#navLinks a {
+#navLinksL a {
+    display: flex;
+    align-items:flex-end;
     padding: 5px;
     border-radius: 15px;
-    display: flex;
     font-size: 14px;
-    align-items:flex-end;
 }
-#navLinks a:last-child {
+/* #navLinksL a:last-child {
     display: none;
-}
-#navLinksSM {
-    
-    gap: 20px;
+} */
+#navLinksM {
+    gap: 10px;
     margin-right: 20px;
     /* list-style:none; */
     display: flex;
     /* flex-direction: column; */
     /* padding: 10px; */
 }
-#navLinksSM a {
+#navLinksM a {
     padding: 10px;
     border-radius: 50px;
+}
+#navLinksS {
+    display: none;
+    margin-right: 50px;
 }
 nav a, footer {
     text-decoration: none;
@@ -91,8 +95,7 @@ main {
     padding: 20px;
     margin-top: 50px;
     /* width: 48.5%; */
-    width: 560px;
-    width: 340px;
+    width: 300px;
 }
 #introOne {
     /* margin: 0 0 0 640px; */
@@ -107,7 +110,7 @@ main {
     line-height: 15px;
 }
 #introOne>img {
-    width: 300px;
+    width: 260px;
     border-radius: 35px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -188,8 +191,8 @@ input[type=submit], input[type=reset] {
     padding: 10px;
     border-radius: 50px;
     border: 0;
-    background-color: whitesmoke;
     background-color: white;
+    background-color: whitesmoke;
     /* background-color: lightgrey; */
     cursor: pointer;
 }
@@ -222,7 +225,7 @@ footer img {
 }
 /* Media Queries */
 
-@media (width > 700px) {
+@media (width > 760px) {
     #introZero {
         flex-direction: row;
         width: 560px;
@@ -241,18 +244,31 @@ footer img {
         width: 425px;
     }
 }
-@media (width > 700px) {
-    #navLinks a:not(:last-child){
-        /* display: none; */
+@media (width > 760px) {
+    nav h1 {
+        padding: 18px 10px;
+        font-size: 20px;
     }
-    #navLinks {
+    /* #navLinksL a:not(:last-child){
+        display: none;
+    } */
+    #navLinksL {
         display: flex;
     }
-    #navLinksSM {
+    #navLinksM {
         display: none;
     }
-    /* #navLinks a:last-child {
+    #navLinksL a:last-child {
+        display: none;
+    }
+}
+
+@media (width < 550px) {
+    #navLinksL, #navLinksM {
+        display: none;
+    }
+    #navLinksS {
         display: block;
-    } */
+    }
 }
 

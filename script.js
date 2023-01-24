@@ -18,7 +18,7 @@ function navLiHover(element) {
     var img = element.children[0];
     var text = element.children[1]
     // console.log(li);
-    console.log(img);
+    // console.log(img);
     if (!element.classList.contains("navLiHover")) {
         element.classList.add("navLiHover");
         element.classList.add("shadow");
