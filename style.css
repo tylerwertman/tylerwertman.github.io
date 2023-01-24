@@ -40,7 +40,7 @@ nav h1 {
 #navLinksL {
     margin-right: 20px;
     padding: 10px;
-    display: none;
+    display: flex;
 }
 #navLinksL a {
     display: flex;
@@ -49,14 +49,17 @@ nav h1 {
     border-radius: 15px;
     font-size: 14px;
 }
-/* #navLinksL a:last-child {
+#navLinksL .hidden {
     display: none;
-} */
+}
+#navLinksL a:last-child {
+    display: none;
+}
 #navLinksM {
     gap: 10px;
     margin-right: 20px;
     /* list-style:none; */
-    display: flex;
+    display: none;
     /* flex-direction: column; */
     padding: 3px;
 }
@@ -136,6 +139,10 @@ main {
     width: 340px;
     padding-left: 0;
 }
+#introTwo h2 {
+    width: 300px;
+    margin-left: 20px;
+}
 
 #introTwo p {
     line-height: 1.2em;
@@ -185,7 +192,7 @@ form input[type=text] {
     justify-content:end; */
 }
 form textarea {
-    width: 210px;
+    width: 215px;
 }
 input[type=submit], input[type=reset] {
     padding: 10px;
@@ -198,10 +205,11 @@ input[type=submit], input[type=reset] {
 }
 
 footer {
-    padding: 10px;
+    padding: 10px 0;
     position: fixed;
     bottom: 0%;
     text-align: center;
+    margin: 0;
 }
 footer img {
     cursor: pointer;
@@ -234,6 +242,10 @@ footer img {
         margin-left: 20px;
         width: 560px;
     }
+    #introTwo h2 {
+        width: 240px;
+        margin-left: 0;
+    }
     .content {
         width: 560px;
     }
@@ -243,13 +255,11 @@ footer img {
     form textarea {
         width: 425px;
     }
-}
-@media (width > 760px) {
-    /* #navLinksL a:not(:last-child){
-        display: none;
-    } */
     #navLinksL {
         display: flex;
+    }
+    #navLinksL .hidden {
+        display: inline;
     }
     #navLinksM {
         display: none;
@@ -260,7 +270,7 @@ footer img {
     }
 }
 
-@media (width < 550px) {
+@media (350px < width < 550px) {
     nav h1 {
         padding: 18px 10px;
         font-size: 20px;
@@ -268,9 +278,53 @@ footer img {
     #navLinksL, #navLinksM {
         display: none;
     }
+    #navLinksL a:last-child {
+        display: none;
+    }
+    #navLinksS {
+        display: block;
+        padding: 10px;
+    }
+    #introTwo h2 {
+        width: 300px;
+    }
+}
+
+@media (width < 350px) {
+    #introZero {
+        flex-direction: column;
+        width: 265px;
+    }
+    #introOne > img {
+        width: 225px;
+    }
+    #introTwo {
+        width: 280px;
+    }
+    #introTwo h2 {
+        width: 265px;
+        margin-left: 7px;
+    }
+    .content {
+        width: 265px;
+    }
+    video {
+        width: 265px;
+    }
+    form br.hidden {
+        display: block;
+    }
+    form textarea {
+        width: 215px;
+    }
+    #navLinksL, #navLinksM {
+        display: none;
+    }
+    #navLinksL a:last-child {
+        display: none;
+    }
     #navLinksS {
         display: block;
         padding: 10px;
     }
 }
-
