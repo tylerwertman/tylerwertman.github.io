@@ -55,18 +55,6 @@ nav h1 {
 #navLinksL a:last-child {
     display: none;
 }
-#navLinksM {
-    gap: 10px;
-    margin-right: 20px;
-    /* list-style:none; */
-    display: none;
-    /* flex-direction: column; */
-    padding: 3px;
-}
-#navLinksM a {
-    padding: 10px;
-    border-radius: 50px;
-}
 #navLinksS {
     display: none;
     margin-right: 50px;
@@ -261,21 +249,21 @@ footer img {
     #navLinksL .hidden {
         display: inline;
     }
-    #navLinksM {
-        display: none;
-        padding: 13px;
-    }
     #navLinksL a:last-child {
         display: none;
     }
 }
-
+@media (549px < width < 761px) {
+    #navLinksL a {
+        gap: 20px;
+    }
+}
 @media (350px < width < 550px) {
     nav h1 {
         padding: 18px 10px;
         font-size: 20px;
     }
-    #navLinksL, #navLinksM {
+    #navLinksL {
         display: none;
     }
     #navLinksL a:last-child {
@@ -317,7 +305,7 @@ footer img {
     form textarea {
         width: 215px;
     }
-    #navLinksL, #navLinksM {
+    #navLinksL {
         display: none;
     }
     #navLinksL a:last-child {
