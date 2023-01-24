@@ -70,10 +70,13 @@ function socialHover(element){
 }
 
 function navStack() {
-var nav = document.getElementsByTagName("nav");
-    if (nav.className === "") {
-        nav.className += "responsive";
-    } else {
+var nav = document.querySelector("#navLinksSE");
+console.log(nav);
+    if (nav.className == "toggle") {
         nav.className = "";
+        nav.style.display = "flex"
+    } else {
+        nav.className += "toggle";
+        nav.style.display = "none"
     }
 }

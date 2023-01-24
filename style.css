@@ -59,6 +59,28 @@ nav h1 {
     display: none;
     margin-right: 50px;
 }
+#navLinksSE {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 9%;
+    right: 0%;
+    background-color: lightgray;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    /* height: 200px; */
+    padding: 20px;
+    gap: 30px;
+    box-shadow: 0 0 10px black;
+}
+#navLinksSE a {
+    display: flex;
+    align-items:flex-end;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 14px;
+}
 nav a, footer {
     text-decoration: none;
 }
@@ -73,9 +95,6 @@ main {
     align-items: center;
     flex-direction: column;
 }
-
-/* big screen>640px intro */
-
 #introZero {                                        
     display: flex;
     flex-direction: column;
@@ -219,6 +238,10 @@ footer img {
     background-color: seagreen;
     color: lightgrey;
 }
+
+.toggle {
+    display: flex;
+}
 /* Media Queries */
 
 @media (width > 760px) {
@@ -258,7 +281,7 @@ footer img {
         gap: 20px;
     }
 }
-@media (350px < width < 550px) {
+@media (349px < width < 550px) {
     nav h1 {
         padding: 18px 10px;
         font-size: 20px;
@@ -277,8 +300,16 @@ footer img {
         width: 300px;
     }
 }
-
+@media (width < 394px) {
+    #navLinksSE {
+        top: 14%;
+    }
+}
 @media (width < 350px) {
+    nav h1 {
+        padding: 18px 10px;
+        font-size: 20px;
+    }
     #introZero {
         flex-direction: column;
         width: 265px;
@@ -314,5 +345,10 @@ footer img {
     #navLinksS {
         display: block;
         padding: 10px;
+    }
+}
+@media (width > 349px) {
+    #navLinksSE {
+        display: none;
     }
 }
