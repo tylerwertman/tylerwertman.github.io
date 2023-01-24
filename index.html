@@ -14,19 +14,19 @@
         <nav>
             <h1 onmouseenter="navH1Hover(this)" onmouseleave="navH1Hover(this)"><a href="#">Tyler Wertman Developments</a></h1>
             <div id="navLinks">
-                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#home"><img src="./images/Home-DSG.svg" alt="Home">&nbsp;Home</a>&nbsp;
-                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#about"><img src="./images/About-DSG.svg" alt="About">&nbsp;About</a>&nbsp;
-                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#projects"><img src="./images/Projects-DSG.svg" alt="Projects">&nbsp;Projects</a>&nbsp;
-                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#education"><img src="./images/Education-DSG.svg" alt="Education">&nbsp;Education</a>&nbsp;
-                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#contact"><img src="./images/Contact-DSG.svg" alt="Contact">&nbsp;Contact</a>&nbsp;
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#home"><img src="./images/Home-DSG.svg" alt="Home">&nbsp<span>Home</span></a>&nbsp
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#about"><img src="./images/About-DSG.svg" alt="About">&nbsp<span>About</span></a>&nbsp
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#projects"><img src="./images/Projects-DSG.svg" alt="Projects">&nbsp<span>Projects</span></a>&nbsp
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#education"><img src="./images/Education-DSG.svg" alt="Education">&nbsp<span>Education</span></a>&nbsp
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#contact"><img src="./images/Contact-DSG.svg" alt="Contact">&nbsp<span>Contact</span></a>&nbsp
+                <a href="javascript:void(0);" class="icon" onclick="navStack()"><i class="fa fa-bars"></i></a>
             </div>
             <div id="navLinksSM">
-                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#home"><img src="./images/Home-DSG.svg" alt="Home"></a>&nbsp;
-                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#about"><img src="./images/About-DSG.svg" alt="About"></a>&nbsp;
-                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#projects"><img src="./images/Projects-DSG.svg" alt="Projects"></a>&nbsp;
-                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#education"><img src="./images/Education-DSG.svg" alt="Education"></a>&nbsp;
-                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#contact"><img src="./images/Contact-DSG.svg" alt="Contact"></a>&nbsp;
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#home"><img src="./images/Home-DSG.svg" alt="Home"></a>&nbsp
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#about"><img src="./images/About-DSG.svg" alt="About"></a>&nbsp
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#projects"><img src="./images/Projects-DSG.svg" alt="Projects"></a>&nbsp
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#education"><img src="./images/Education-DSG.svg" alt="Education"></a>&nbsp
+                <a onmouseover="navLiHover(this)" onmouseout="navLiHover(this)" href="#contact"><img src="./images/Contact-DSG.svg" alt="Contact"></a>&nbsp
             </div>
         </nav>
         <main>
@@ -52,7 +52,7 @@
             <div class="section" id="about">
                 <h2>About</h2>
                 <div class="content">
-                    <p>I was born and raised on Long Island, New York and currently reside in South Florida. My admiration for the cornerstone between form and function runs deep, and paired with my fascination with learning how things work, my passion for software development and 3D printing began. In my downtime, I enjoy hiking mountains, pickup baseball games, dabbling in DIY woodworking and electrical projects, and poetic writing with a goal of writing music.</p>
+                    <p>I was born and raised on Long Island, New York and currently reside in South Florida. My admiration for the cornerstone between form and function runs deep, and paired with my fascination with learning how things work, my passion for software development and 3D printing began. In my downtime, I enjoy hiking mountains, pickup baseball games, and poetic writing with a goal of writing music.</p>
                 </div>
             </div>
             <div class="section" id="projects">
@@ -96,9 +96,10 @@
                         <input type="text" id="fname" name="fname" size="20" required>
                         <!-- <label for="lname">Last name:</label> -->
                         <!-- <input type="text" id="lname" name="lname" size="20"><br><br> -->
+                        <br class="hidden">
                         <label for="email">Email:</label>
                         <input type="text" id="email" name="email" size="20" required><br><br>
-                        <label for="message">&nbsp;&nbsp;Message:</label><br><br>
+                        <label for="message">&nbsp&nbspMessage:</label><br><br>
                         <textarea name="message" rows="5" cols="55" required></textarea><br><br>
                         <input type="submit" value="Submit">
                         <input type="reset">

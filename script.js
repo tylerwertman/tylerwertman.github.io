@@ -15,23 +15,23 @@ function navH1Hover(element) {
 
 function navLiHover(element) {
     console.log("navLiHover running");
-    var a = element;
-    var name = a.children[0];
+    var img = element.children[0];
+    var text = element.children[1]
     // console.log(li);
-    // console.log(name);
-    if (!a.classList.contains("navLiHover")) {
-        a.classList.add("navLiHover");
-        // name.classList.add("shadow");
-        // a.classList.add("shadow");
-        name.src = `./images/${name.alt}-LG.svg`
+    console.log(img);
+    if (!element.classList.contains("navLiHover")) {
+        element.classList.add("navLiHover");
+        // img.classList.add("shadow");
+        element.classList.add("shadow");
+        img.src = `./images/${img.alt}-LG.svg`
         // console.log(li.children[0].src);
-        name.style.color = "lightgrey";
+        text.style.color = "lightgrey";
     }else {
-        a.classList.remove("navLiHover");
-        // name.classList.remove("shadow");
-        // a.classList.remove("shadow");
-        name.src = `./images/${name.alt}-DSG.svg`
-        name.style.color = "darkslategrey";
+        element.classList.remove("navLiHover");
+        // img.classList.remove("shadow");
+        element.classList.remove("shadow");
+        img.src = `./images/${img.alt}-DSG.svg`
+        text.style.color = "darkslategrey";
     }
 }
 // function buttonHover(element) {
@@ -55,19 +55,27 @@ function navLiHover(element) {
 
 function socialHover(element){
     console.log("socialHover running");
-    var icon = element;
-    var name = icon.alt;
+    var text = element.alt;
     // console.log(icon);
     // console.log(icon.src);
     // console.log(name);
     // console.log(icon.style.top);
-    if (!icon.classList.contains("socialHover")) {
-        icon.classList.add("socialHover");
-        icon.classList.add("shadow");
-        icon.src = `./images/${name}-fill-SG.svg`;
+    if (!element.classList.contains("socialHover")) {
+        element.classList.add("socialHover");
+        element.classList.add("shadow");
+        element.src = `./images/${text}-fill-SG.svg`;
     }else {
-        icon.classList.remove("socialHover");
-        icon.classList.remove("shadow");
-        icon.src = `./images/${name}-fill-DSG.svg`
+        element.classList.remove("socialHover");
+        element.classList.remove("shadow");
+        element.src = `./images/${text}-fill-DSG.svg`
+    }
+}
+
+function navStack() {
+var nav = document.getElementsByTagName("nav");
+    if (nav.className === "") {
+        nav.className += "responsive";
+    } else {
+        nav.className = "";
     }
 }

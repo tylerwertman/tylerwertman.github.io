@@ -13,7 +13,6 @@ nav {
 }
 #container, footer {
     width: 100%;
-    /* height: 1280px; */
     margin: 0 auto;
 }
 nav {
@@ -38,30 +37,32 @@ nav h1 {
     font-size: 20px;
 }
 #navLinks {
-    /* gap: 50px; */
-    /* list-style:none; */
     margin-right: 20px;
     padding: 10px;
     display: flex;
-    align-items: flex-start;
 }
 #navLinks a {
-    padding: 10px;
+    padding: 5px;
     border-radius: 15px;
-    font-size: 14px;
     display: flex;
+    font-size: 14px;
     align-items:flex-end;
 }
 #navLinks a:last-child {
     display: none;
 }
 #navLinksSM {
+    
     gap: 20px;
+    margin-right: 20px;
     /* list-style:none; */
     display: none;
     /* flex-direction: column; */
-    margin-right: 20px;
+    /* padding: 10px; */
+}
+#navLinksSM a {
     padding: 10px;
+    border-radius: 50px;
 }
 nav a, footer {
     text-decoration: none;
@@ -166,6 +167,14 @@ main {
 #contact {
     margin-bottom: 50px;
 }
+form br.hidden {
+    display: none;
+}
+form input[type=text] {
+    width: 155px;
+    /* display: flex;
+    justify-content:end; */
+}
 input[type=submit], input[type=reset] {
     padding: 10px;
     border-radius: 50px;
@@ -190,7 +199,7 @@ footer img {
 }
 
 
-/* JS classes */
+/* JS & MQ classes */
 .shadow {
     position: relative;
     bottom: 5px;
@@ -202,10 +211,9 @@ footer img {
     background-color: seagreen;
     color: lightgrey;
 }
-
 /* Media Queries */
 
-@media (width < 641px) {
+@media (width < 701px) {
     #introZero {
         flex-direction: column;
         width: 340px;
@@ -217,8 +225,14 @@ footer img {
     .content {
         width: 340px;
     }
+    form br.hidden {
+        display: block;
+    }
+    form textarea {
+        width: 200px;
+    }
 }
-@media (width < 910px) {
+@media (width < 701px) {
     #navLinks a:not(:last-child){
         display: none;
     }
