@@ -58,7 +58,7 @@ nav h1 {
     /* list-style:none; */
     display: flex;
     /* flex-direction: column; */
-    /* padding: 10px; */
+    padding: 3px;
 }
 #navLinksM a {
     padding: 10px;
@@ -158,7 +158,7 @@ main {
     background-color: lightgrey;
     padding: 20px;
     border-radius: 50px;
-    width: 340px;
+    width: 300px;
 }
 #about .content, #todo .content{
     line-height: 1.3;
@@ -245,10 +245,6 @@ footer img {
     }
 }
 @media (width > 760px) {
-    nav h1 {
-        padding: 18px 10px;
-        font-size: 20px;
-    }
     /* #navLinksL a:not(:last-child){
         display: none;
     } */
@@ -257,6 +253,7 @@ footer img {
     }
     #navLinksM {
         display: none;
+        padding: 13px;
     }
     #navLinksL a:last-child {
         display: none;
@@ -264,11 +261,16 @@ footer img {
 }
 
 @media (width < 550px) {
+    nav h1 {
+        padding: 18px 10px;
+        font-size: 20px;
+    }
     #navLinksL, #navLinksM {
         display: none;
     }
     #navLinksS {
         display: block;
+        padding: 10px;
     }
 }
 
