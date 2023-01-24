@@ -21,14 +21,12 @@ function navLiHover(element) {
     console.log(img);
     if (!element.classList.contains("navLiHover")) {
         element.classList.add("navLiHover");
-        // img.classList.add("shadow");
         element.classList.add("shadow");
         img.src = `./images/${img.alt}-LG.svg`
         // console.log(li.children[0].src);
         text.style.color = "lightgrey";
     }else {
         element.classList.remove("navLiHover");
-        // img.classList.remove("shadow");
         element.classList.remove("shadow");
         img.src = `./images/${img.alt}-DSG.svg`
         text.style.color = "darkslategrey";
