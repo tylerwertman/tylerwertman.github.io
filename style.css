@@ -226,22 +226,6 @@ footer img {
 }
 
 
-/* JS & MQ classes */
-.shadow {
-    position: relative;
-    bottom: 5px;
-    box-shadow: 5px 5px 5px grey;
-    cursor: pointer;
-}
-
-.navLiHover {
-    background-color: seagreen;
-    color: lightgrey;
-}
-
-.toggle {
-    display: flex;
-}
 /* Media Queries */
 
 @media (width > 899px) {
@@ -275,16 +259,7 @@ footer img {
     #navLinksL a:last-child {
         display: none;
     }
-    #navLinksSE {
-        display: none;
-    }
-}
-@media (564px < width < 900px) {
-    #navLinksL a {
-        /* gap: 20px; */
-        margin: 0 10px 0 10px;
-    }
-    #navLinksSE {
+    #navLinksSE, #navLinksSE a {
         display: none;
     }
 }
@@ -308,16 +283,6 @@ footer img {
     }
     #navLinksSE {
         top: 10%;
-    }
-}
-@media (width < 374px) {
-    #navLinksSE {
-        top: 13.7%;
-    }
-}
-@media (width < 231px) {
-    #navLinksSE {
-        top: 17%;
     }
 }
 @media (width < 350px) {
@@ -362,8 +327,45 @@ footer img {
         padding: 10px;
     }
 }
-@media (width > 349px) {
-    #navLinksSE {
+
+@media (564px < width < 900px) {
+    #navLinksL a {
+        /* gap: 20px; */
+        margin: 0 10px 0 10px;
+    }
+    #navLinksSE, #navLinksSE a {
         display: none;
     }
+}
+@media (width < 231px) {
+    #navLinksSE {
+        top: 12.1%;
+    }
+}
+@media (230px < width < 374px) {
+    #navLinksSE {
+        top: 9.5%;
+    }
+}
+@media (373px < width < 565px) {
+    #navLinksSE {
+        top: 7%;
+    }
+}
+
+/* JS & MQ classes */
+.shadow {
+    position: relative;
+    bottom: 5px;
+    box-shadow: 5px 5px 5px grey;
+    cursor: pointer;
+}
+
+.navLiHover {
+    background-color: seagreen;
+    color: lightgrey;
+}
+
+#toggle { /* This won't work because the ID has higher precedence over the class */
+    display: flex;
 }
