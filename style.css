@@ -63,7 +63,7 @@ nav h1 {
     display: none;
     flex-direction: column;
     position: fixed;
-    top: 9%;
+    top: 57px;
     right: 0%;
     background-color: lightgray;
     width: 40px;
@@ -281,9 +281,9 @@ footer img {
     #introTwo h2 {
         width: 300px;
     }
-    #navLinksSE {
+    /* #navLinksSE {
         top: 10%;
-    }
+    } */
 }
 @media (width < 350px) {
     nav h1 {
@@ -342,14 +342,14 @@ footer img {
         top: 12.1%;
     }
 }
-@media (230px < width < 374px) {
+@media (230px < width < 373px) {
     #navLinksSE {
-        top: 9.5%;
+        top: 82px;
     }
 }
-@media (373px < width < 565px) {
+@media (372px < width < 565px) {
     #navLinksSE {
-        top: 7%;
+        top: 60px;
     }
 }
 
