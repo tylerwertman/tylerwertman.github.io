@@ -263,7 +263,21 @@ footer img {
         display: none;
     }
 }
-@media (349px < width < 565px) {
+@media (width > 1919px) {
+    nav h1 {
+        padding: 18px 0;
+        font-size: 35px;
+    }
+    #navLinksL a {
+        font-size: 20px;
+        padding: 20px 35px 20px 20px;
+        margin: 0 20px;
+    }
+    #navLinksL a img {
+        height: 150%;
+    }
+}
+@media (349px < width < 585px) {
     nav h1 {
         padding: 18px 0;
         font-size: 20px;
@@ -328,7 +342,7 @@ footer img {
     }
 }
 
-@media (564px < width < 900px) {
+@media (584px < width < 900px) {
     #navLinksL a {
         /* gap: 20px; */
         margin: 0 10px 0 10px;
@@ -347,7 +361,7 @@ footer img {
         top: 9.5%;
     }
 }
-@media (373px < width < 565px) {
+@media (373px < width < 585px) {
     #navLinksSE {
         top: 7%;
     }
