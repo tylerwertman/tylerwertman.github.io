@@ -263,6 +263,20 @@ footer img {
         display: none;
     }
 }
+@media (width > 1919px) {
+    nav h1 {
+        padding: 18px 0;
+        font-size: 35px;
+    }
+    #navLinksL a {
+        font-size: 20px;
+        padding: 20px 35px 20px 20px;
+        margin: 0 20px;
+    }
+    #navLinksL a img {
+        height: 150%;
+    }
+}
 @media (349px < width < 565px) {
     nav h1 {
         padding: 18px 0;
