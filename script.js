@@ -81,7 +81,7 @@ console.log(nav);
     }
 }
 
-
+//Pokemon
 async function newPoke() {
     var rng = Math.floor(Math.random() * 152);
     console.log("running newPoke");
