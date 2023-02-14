@@ -226,7 +226,7 @@ input[type=submit], input[type=reset] {
     margin: 0 auto 0;
     padding: 35px 45px;
     width: 76%;
-    height: 46%;
+    height: 41%;
     background-color: rgb(50, 50, 50);
     border-radius: 30px;
     display: flex;
@@ -245,7 +245,7 @@ input[type=submit], input[type=reset] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 .js img {
     /* display: flex; */
@@ -260,7 +260,6 @@ input[type=submit], input[type=reset] {
     /* background-color: red; */
     color: gold;
     -webkit-text-stroke: 1px blue;
-    /* border: 2px dashed black; */
     padding: 10px;
     font-weight: bold;
     font-size: 1.1rem;
@@ -297,7 +296,7 @@ input[type=submit], input[type=reset] {
     padding: 3px 0;
     text-align: center;
     /* filter:opacity(50%); */
-    margin: 10px 120px;
+    margin: 20px 120px;
     font-size: 1.25rem;
     border: 2px solid rgb(104, 161, 104);
     border-radius: 25px;
@@ -307,7 +306,7 @@ input[type=submit], input[type=reset] {
 .gameboyCtrl{
     display: flex;
     justify-content: space-between;
-    margin: 10px 20px 30px;
+    margin: 0px 20px 30px;
 }
 .dpad {
     width: 139px;
@@ -330,6 +329,8 @@ input[type=submit], input[type=reset] {
 .sqBtn, .activeBtn, .cirBtn {
     width: 35px;
     height: 35px;
+}
+.activeBtn, .cirBtn {
     cursor: crosshair;
 }
 .activeBtn, .cirBtn, .dot{
@@ -346,7 +347,7 @@ input[type=submit], input[type=reset] {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 25px;
+    margin-top: 50px;
 }
 .ssBtn {
     width: 40px;
@@ -360,7 +361,9 @@ input[type=submit], input[type=reset] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: rgb(143, 222, 143);
+}
+.ssText {
+    color: rgb(104, 161, 104);
 }
 .sillhouette {
     filter: grayscale(100%) brightness(0);
@@ -423,6 +426,9 @@ footer img {
     #navLinksSE, #navLinksSE a {
         display: none;
     }
+    video {
+    display: none;
+    }    
 }
 @media screen and (width > 1919px) {
     #introZero {
@@ -487,6 +493,12 @@ footer img {
     /* #navLinksSE {
         top: 10%;
     } */
+    .gameboy {
+        display: none;
+    }
+    video {
+        display: block;
+    }
 }
 @media screen and (width < 350px) {
     nav h1 {
@@ -539,6 +551,9 @@ footer img {
     #navLinksSE, #navLinksSE a {
         display: none;
     }
+    .gameboy {
+        display: none;
+    }
 }
 @media screen and (width < 231px) {
     #navLinksSE {
@@ -569,6 +584,7 @@ footer img {
     color: lightgrey;
 }
 
-#toggle { /* This won't work because the ID has higher precedence over the class */
+#toggle {
     display: flex;
 }
+/* This won't work because the ID has higher precedence over the class */
