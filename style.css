@@ -213,7 +213,7 @@ input[type=submit], input[type=reset] {
 /* Pokemon */
 
 .gameboy {
-    display: flex;
+    display: none;
     flex-direction: column;
     margin: 0 auto;
     padding: 20px;
@@ -427,8 +427,8 @@ footer img {
         display: none;
     }
     video {
-    display: none;
-    }    
+        display: none;
+    }
 }
 @media screen and (width > 1919px) {
     #introZero {
@@ -493,12 +493,6 @@ footer img {
     /* #navLinksSE {
         top: 10%;
     } */
-    .gameboy {
-        display: none;
-    }
-    video {
-        display: block;
-    }
 }
 @media screen and (width < 350px) {
     nav h1 {
@@ -551,9 +545,6 @@ footer img {
     #navLinksSE, #navLinksSE a {
         display: none;
     }
-    .gameboy {
-        display: none;
-    }
 }
 @media screen and (width < 231px) {
     #navLinksSE {
@@ -568,6 +559,14 @@ footer img {
 @media screen and (372px < width < 565px) {
     #navLinksSE {
         top: 57px;
+    }
+}
+@media screen and (width > 899px) {
+    .gameboy {
+        display: flex;
+    }
+    video {
+        display: none;
     }
 }
 
