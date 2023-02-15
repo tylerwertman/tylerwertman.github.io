@@ -426,6 +426,9 @@ footer img {
     #navLinksSE, #navLinksSE a {
         display: none;
     }
+    .gameboy {
+        display: flex;
+    }
     video {
         display: none;
     }
@@ -559,14 +562,6 @@ footer img {
 @media screen and (372px < width < 565px) {
     #navLinksSE {
         top: 57px;
-    }
-}
-@media screen and (width > 899px) {
-    .gameboy {
-        display: flex;
-    }
-    video {
-        display: none;
     }
 }
 
