@@ -185,6 +185,7 @@ main {
 #education li {
     list-style: square;
     /* text-align: left; */
+    list-style-position:inside;
 }
 #contact {
     margin-bottom: 50px;
