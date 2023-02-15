@@ -2,7 +2,7 @@ console.log("websiteLoaded");
 
 function navH1Hover(element) {
     console.log("navH1Hover running");
-    const h1 = element;
+    var h1 = element;
     // console.log(h1.children[0].innerText);
     if(!h1.children[0].classList.contains("navH1Hover")) {
         h1.children[0].classList.add("navH1Hover");
@@ -15,8 +15,8 @@ function navH1Hover(element) {
 
 function navLiHover(element) {
     console.log("navLiHover running");
-    const img = element.children[0];
-    const text = element.children[1]
+    var img = element.children[0];
+    var text = element.children[1]
     // console.log(li);
     // console.log(img);
     if (!element.classList.contains("navLiHover")) {
@@ -34,8 +34,8 @@ function navLiHover(element) {
 }
 // function buttonHover(element) {
 //     console.log("buttonHover running");
-//     const button = element;
-//     const name = button.children[0].alt;
+//     var button = element;
+//     var name = button.children[0].alt;
 //     // console.log(button.style.color);
 //     // console.log(button.children[0].alt);
 //     if (!button.classList.contains("buttonHover")) {
@@ -53,7 +53,7 @@ function navLiHover(element) {
 
 function socialHover(element){
     console.log("socialHover running");
-    const text = element.alt;
+    var text = element.alt;
     // console.log(icon);
     // console.log(icon.src);
     // console.log(name);
@@ -70,8 +70,8 @@ function socialHover(element){
 }
 
 function navStack() {
-const nav = document.querySelector("#navLinksSE");
-console.log(nav);
+var nav = document.querySelector("#navLinksSE");
+    // console.log(nav);
     if (nav.className == "toggle") {
         nav.className = "";
         nav.style.display = "flex"
@@ -83,39 +83,39 @@ console.log(nav);
 
 //Pokemon
 async function newPoke() {
-    const rng = Math.floor(Math.random() * 152);
+    var rng = Math.floor(Math.random() * 152);
     console.log("running newPoke");
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon/"+rng);
-    const pokeData = await response.json();
-    const pokeImg = document.querySelector(".js img");
-    const pokeText = document.querySelector(".js p");
+    var response = await fetch("https://pokeapi.co/api/v2/pokemon/"+rng);
+    var pokeData = await response.json();
+    var pokeImg = document.querySelector(".js img");
+    var pokeText = document.querySelector(".js p");
     pokeText.innerText = "Who's that Pokemon?"
     pokeImg.classList.add("sillhouette")
     pokeText.style.textTransform = "";
-    console.log(pokeData);
+    // console.log(pokeData);
     pokeImg.src = pokeData.sprites.front_default
     currentPoke = rng;
     return currentPoke;
 }
-const currentPoke = newPoke();
+var currentPoke = newPoke();
 
 async function revealPoke() {
     console.log("running revealPoke");
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon/"+currentPoke);
-    const pokeData = await response.json();
-    const pokeImg = document.querySelector(".js img");
-    const pokeText = document.querySelector(".js p");
+    var response = await fetch("https://pokeapi.co/api/v2/pokemon/"+currentPoke);
+    var pokeData = await response.json();
+    var pokeImg = document.querySelector(".js img");
+    var pokeText = document.querySelector(".js p");
     pokeText.innerText = `It's ${pokeData.name}!`;
-    console.log(pokeImg.classList);
+    // console.log(pokeImg.classList);
     pokeImg.classList.remove("sillhouette")
     pokeText.style.textTransform = "Capitalize";
 
 }
 async function shinyPoke() {
     console.log("running shinyPoke");
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon/"+currentPoke);
-    const pokeData = await response.json();
-    const pokeImg = document.querySelector(".js img");
+    var response = await fetch("https://pokeapi.co/api/v2/pokemon/"+currentPoke);
+    var pokeData = await response.json();
+    var pokeImg = document.querySelector(".js img");
     if (pokeImg.classList.length == 0 && pokeImg.src == pokeData.sprites.front_default) {
         pokeImg.src = pokeData.sprites.front_shiny;
     }
@@ -125,9 +125,9 @@ async function shinyPoke() {
 }
 async function defaultPoke() {
     console.log("running defaultPoke");
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon/"+currentPoke);
-    const pokeData = await response.json();
-    const pokeImg = document.querySelector(".js img");
+    var response = await fetch("https://pokeapi.co/api/v2/pokemon/"+currentPoke);
+    var pokeData = await response.json();
+    var pokeImg = document.querySelector(".js img");
     if (pokeImg.classList.length == 0 && pokeImg.src == pokeData.sprites.front_shiny) {
         pokeImg.src = pokeData.sprites.front_default;
     }
@@ -138,9 +138,9 @@ async function defaultPoke() {
 
 async function frontPoke() {
     console.log("running frontPoke");
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon/"+currentPoke);
-    const pokeData = await response.json();
-    const pokeImg = document.querySelector(".js img");
+    var response = await fetch("https://pokeapi.co/api/v2/pokemon/"+currentPoke);
+    var pokeData = await response.json();
+    var pokeImg = document.querySelector(".js img");
     if (pokeImg.classList.length == 0 && pokeImg.src == pokeData.sprites.back_default) {
         pokeImg.src = pokeData.sprites.front_default;
     }
@@ -150,9 +150,9 @@ async function frontPoke() {
 }
 async function backPoke() {
     console.log("running backPoke");
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon/"+currentPoke);
-    const pokeData = await response.json();
-    const pokeImg = document.querySelector(".js img");
+    var response = await fetch("https://pokeapi.co/api/v2/pokemon/"+currentPoke);
+    var pokeData = await response.json();
+    var pokeImg = document.querySelector(".js img");
     if (pokeImg.classList.length == 0 && pokeImg.src == pokeData.sprites.front_default) {
         pokeImg.src = pokeData.sprites.back_default;
     }
