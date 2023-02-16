@@ -183,9 +183,9 @@ main {
     padding: 10px;
 }
 #education li {
+    margin-left: 26.75%;
     list-style: square;
-    /* text-align: left; */
-    list-style-position:inside;
+    text-align: left;
 }
 #contact {
     margin-bottom: 50px;
@@ -427,6 +427,9 @@ footer img {
     #navLinksSE, #navLinksSE a {
         display: none;
     }
+    #education li {
+        margin-left: 37.5%;
+    }
     .gameboy {
         display: flex;
     }
@@ -475,6 +478,9 @@ footer img {
     .content p {
         font-size: 24px;
     }
+    #education li {
+        margin-left: 43.75%;
+    }
 }
 @media screen and (349px < width < 565px) {
     nav h1 {
@@ -497,6 +503,9 @@ footer img {
     /* #navLinksSE {
         top: 10%;
     } */
+    #education li {
+        margin-left: 26.75%;
+    }
 }
 @media screen and (width < 350px) {
     nav h1 {
@@ -538,6 +547,9 @@ footer img {
     #navLinksS {
         display: block;
         padding: 10px;
+    }
+    #education li {
+        margin-left: 23.75%;
     }
 }
 
