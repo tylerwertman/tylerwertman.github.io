@@ -95,6 +95,7 @@ async function newPoke() {
     // console.log(pokeData);
     pokeImg.src = pokeData.sprites.front_default
     currentPoke = rng;
+    console.log(currentPoke);
     return currentPoke;
 }
 var currentPoke = newPoke();

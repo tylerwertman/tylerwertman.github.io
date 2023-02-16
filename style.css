@@ -246,7 +246,7 @@ input[type=submit], input[type=reset] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 .js img {
     /* display: flex; */
