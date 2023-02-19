@@ -22,7 +22,7 @@ nav {
     /* padding: 0 20px 0 20px; */
     overflow: hidden;
 }
-nav, footer {                                       /* MQ under 600px */
+nav, footer {
     background-color: whitesmoke;
     background-color: lightgrey;
     /* color: darkslategrey; */
@@ -34,7 +34,7 @@ nav, footer {                                       /* MQ under 600px */
 }
 nav h1 {
     padding: 10px 0;
-    font-size: 15px;
+    font-size: 18px;
     margin-right: 10px;
 }
 #navLinksL {
@@ -218,7 +218,7 @@ input[type=submit], input[type=reset] {
     flex-direction: column;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgb(129, 200, 129);
+    background-color: seagreen;
     width: 375px;
     height: 600px;
     border-radius: 30px;
@@ -299,10 +299,10 @@ input[type=submit], input[type=reset] {
     /* filter:opacity(50%); */
     margin: 20px 120px;
     font-size: 1.25rem;
-    border: 2px solid rgb(104, 161, 104);
+    border: 2px solid rgb(57, 175, 108);
     border-radius: 25px;
     display: inline-block;
-    color: rgb(104, 161, 104);
+    color: rgb(57, 175, 108);
 }
 .gameboyCtrl{
     display: flex;
@@ -335,11 +335,12 @@ input[type=submit], input[type=reset] {
     cursor: crosshair;
 }
 .activeBtn, .cirBtn, .dot{
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(151, 151, 151);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: darkslategrey;
+    font-weight: bold;
 }
 .cirBtn {
     border-radius: 100px;
@@ -353,7 +354,7 @@ input[type=submit], input[type=reset] {
 .ssBtn {
     width: 40px;
     height: 15px;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(151, 151, 151);
     border-radius: 16px;
     margin-bottom: 10px;
     
@@ -364,16 +365,16 @@ input[type=submit], input[type=reset] {
     align-items: center;
 }
 .ssText {
-    color: rgb(104, 161, 104);
+    color: rgb(57, 175, 108);
 }
 .sillhouette {
     filter: grayscale(100%) brightness(0);
 }
 .power {
-position: relative;
-top: 80px;
-/* left: 480px; */
-color: whitesmoke;
+    position: relative;
+    top: 80px;
+    /* left: 480px; */
+    color: whitesmoke;
 }
 
 footer {

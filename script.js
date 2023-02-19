@@ -82,6 +82,8 @@ var nav = document.querySelector("#navLinksSE");
 }
 
 //Pokemon
+let currentPoke = newPoke();
+
 async function newPoke() {
     var rng = Math.floor(Math.random() * 152);
     console.log("running newPoke");
@@ -98,7 +100,6 @@ async function newPoke() {
     console.log(currentPoke);
     return currentPoke;
 }
-var currentPoke = newPoke();
 
 async function revealPoke() {
     console.log("running revealPoke");
