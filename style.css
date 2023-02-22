@@ -10,6 +10,7 @@ body {
 }
 nav {
     display: flex;
+    z-index: 100;
 }
 #container, footer {
     width: 100%;
@@ -256,6 +257,8 @@ input[type=submit], input[type=reset] {
     height: 70%;
     align-self: center;
     margin-top: 20px;
+    /* z-index: 0; */
+
 }
 #textBox {
     /* background-color: red; */
@@ -369,6 +372,8 @@ input[type=submit], input[type=reset] {
 }
 .sillhouette {
     filter: grayscale(100%) brightness(0);
+    /* z-index: 0; */
+    /* position: absolute; */
 }
 .power {
     position: relative;
@@ -585,11 +590,13 @@ footer img {
     bottom: 5px;
     box-shadow: 5px 5px 5px grey;
     cursor: pointer;
+    transition: all 300ms ease;
 }
 
 .navLiHover {
     background-color: seagreen;
     color: lightgrey;
+    transition: all 300ms ease;
 }
 
 #toggle {
